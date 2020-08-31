@@ -7,6 +7,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* HEADER */
+
 .header {
   width: 100%;
   background-color: #eaeaea;
@@ -14,9 +17,6 @@ body {
   background-repeat: no-repeat;
   background-position: left center, 100% 90%;
   background-blend-mode: overlay;
-}
-.header:hover {
-  background-blend-mode: normal;
 }
 .top-links {
   background-color: #2e2e2e;
@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 95%;
+  width: 98%;
 }
 .top-links__item {
   margin: 0 42px 0 0;
@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 95%;
+  width: 98%;
 }
 .setings__search {
   display: flex;
@@ -199,11 +199,13 @@ body {
   font-weight: 400;
 }
 .main-menu {
+  display: flex;
   background-color: #ffffff;
 }
 .main-menu__container {
   display: flex;
   align-items: center;
+  width: 98%;
 }
 .main-menu__item-container {
   display: flex;
@@ -247,6 +249,7 @@ body {
 }
 .product-menu__container {
   display: flex;
+  width: 98%;
 }
 .product-menu__item {
   display: flex;
@@ -267,4 +270,259 @@ body {
   color: #000000;
   font-weight: 700;
   font-size: 11px;
+}
+
+/* MAIN */
+
+.main {
+  width: 100%;
+  background-color: #ffffff;
+}
+.projector {
+  display: flex;
+  padding: 27px 0;
+  width: 98%;
+}
+.product-img {
+  display: flex;
+}
+.product-img__list {
+  width: 94px;
+  height: 500px;
+}
+.product-img__list--arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 0 0;
+}
+.product-img__list--arrow:first-child {
+  padding: 0 0 12px 0;
+}
+.product-img__list--arrow svg {
+  width: 20px;
+}
+.product-img__list--arrow:first-child svg {
+  transform: rotate(180deg);
+}
+.product-img__list--item {
+  margin: 0 0 12px 0;
+  padding: 3px 6px;
+  width: 100%;
+  border: 1px solid #ececec;
+}
+.product-img__list--item.active {
+  border: 1px solid transparent;
+  border-bottom: 3px solid #cd2d29;
+}
+.product-img__list--item img {
+  width: 100%;
+}
+.product-img__selected {
+  position: relative;
+  padding: 18px 37px 0 22px;
+  width: 100%;
+}
+.product-img__selected img {
+  width: 100%;
+}
+.product-img__selected--info {
+  position: absolute;
+  padding: 0 9px 0 5px;
+  top: 2px;
+  right: 13px;
+  background-color: #cd2d29;
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 1;
+}
+.product-img__selected--info::before {
+  content: " ";
+  position: absolute;
+  background-image: url(/src/img/KształtLeft.png);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: contain;
+  right: 58px;
+  width: 21px;
+  height: 21px;
+  display: block;
+  z-index: -1;
+}
+.product-description {
+  padding: 0 0 0 2px;
+}
+.product-description__info h1 {
+  margin: -4px 0 0 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.product-description__additional {
+  display: flex;
+  margin: 10px 0;
+}
+.product-description__additional p {
+  margin: 0 5px 0 0;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.product-description__additional--producer span {
+  text-transform: none;
+  color: #cd2d29;
+  font-weight: 600;
+}
+.product-description__color--title {
+  margin: 15px 0 0 0;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.product-description__color--container {
+  display: flex;
+  justify-content: space-between;
+}
+.product-description__color--item {
+  margin: 10px 0 0 0;
+  padding: 3px 5px;
+  width: 14%;
+  border: 1px solid #dfdfdf;
+}
+.product-description__color--item.active {
+  border: 1px solid transparent;
+  border-bottom: 4px solid #cd2d29;
+}
+.product-description__color--item img {
+  width: 100%;
+}
+.product-description__color--item:nth-child(2) img {
+  width: 100%;
+  filter: hue-rotate(60deg);
+}
+.product-description__color--item:nth-child(3) img {
+  width: 100%;
+  filter: hue-rotate(120deg);
+}
+.product-description__color--item:nth-child(4) img {
+  width: 100%;
+  filter: hue-rotate(180deg);
+}
+.product-description__color--item:nth-child(5) img {
+  width: 100%;
+  filter: hue-rotate(240deg);
+}
+.product-description__color--item:nth-child(6) img {
+  width: 100%;
+  filter: hue-rotate(300deg);
+}
+.product-description__parameters {
+  display: flex;
+  margin: 15px 0 0 0 ;
+}
+.product-description__parameters--options {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.product-description__parameters--options label {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.product-description__parameters--options select {
+  margin: 8px 6px 0 2px;
+  padding: 13px 5px;
+  border-color: #dfdfdf;
+  font-size: 11px;
+  font-weight: 600;
+  color: #333333;
+}
+.product-description__parameters--options:last-child select {
+  margin: 8px 0 0 10px;
+}
+.product-description__shipment {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0 0 2px;
+}
+.product-description__shipment--availability {
+  display: flex;
+}
+.product-description__shipment--availability span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #8dc640;
+}
+.product-description__shipment--availability div {
+  margin: 0 0 0 10px;
+}
+.product-description__shipment--availability div p {
+  font-size: 11px;
+}
+.product-description__shipment--availability div p:last-child {
+font-weight: 600;
+}
+.product-description__shipment--info {
+  display: flex;
+  justify-content: flex-end;
+}
+.product-description__shipment--info a {
+  text-decoration: none;
+  color: #cd2d29;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+.product-description__price {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 0 0;
+}
+.product-description__price--item span {
+  position: relative;
+  color: #9d9c9c;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+}
+.product-description__price--item:first-child span::before {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #9d9c9c;
+}
+.product-description__price--item p {
+  color: #333333;
+  font-size: 30px;
+  font-weight: 600;
+}
+.product-description__price--item:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 0 20px;
+  width: 102px;
+  border: 1px solid #dfdfdf;
+}
+.product-description__price--item:nth-child(2) span {
+  color: #333333;
+  font-size: 23px;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.product-description__price--item button {
+  padding: 22px 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: url(/src/img/Warstwa683.png);
+  border: none;
 }
