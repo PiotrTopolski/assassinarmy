@@ -121,12 +121,12 @@
               <div class="basket__container">
                 <a href="#">
                   <div class="basket__quantity">
-                    <span>2</span>
+                    <span id="basket-quantity"></span>
                   </div>
                   <div class="basket__txt">
                     <span class="basket__txt--title">twój koszyk</span>
                     <strong class="basket__txt--value"
-                      ><span>3 454,00</span> zł</strong
+                      ><span id="basket-value"></span> zł</strong
                     >
                   </div>
                 </a>
@@ -219,7 +219,7 @@
           <div class="product-img col-7">
             <div class="product-img__list">
               <div class="product-img__list--arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 106">
+                <svg id="up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 106">
                   <defs>
                     <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                       <path d="M0 0L194 0L194 106L0 106Z" />
@@ -254,7 +254,7 @@
                 </li>
               </ul>
               <div class="product-img__list--arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 106">
+                <svg id="down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 106">
                   <defs>
                     <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                       <path d="M0 0L194 0L194 106L0 106Z" />
@@ -289,7 +289,7 @@
                 </p>
               </div>
             </div>
-            <form class="product-description__product-form">
+            <div class="product-description__product-form">
               <div class="product-description__color">
                 <p class="product-description__color--title">Kolor:</p>
                 <ul class="product-description__color--container">
@@ -335,11 +335,16 @@
               </div>
               <div class="product-description__shipment">
                 <div class="product-description__shipment--availability">
-                  <span>
-                    <img src="/src/img/check.png" alt="check">
+                  <span class="check-container">
+                    <img src="/src/img/check.png" alt="check" />
                   </span>
                   <div>
-                    <p>Dostępny na magazynie (14 szt.)</p>
+                    <p>
+                      Dostępny na magazynie (<span id="quantityProduct"
+                        ></span
+                      >
+                      szt.)
+                    </p>
                     <p>Wysyłka dzisiaj</p>
                   </div>
                 </div>
@@ -350,18 +355,18 @@
               <div class="product-description__price">
                 <div class="product-description__price--item">
                   <span>1499,00 zł</span>
-                  <p>1278,00 zł</p>
+                  <p id="price-item"></p>
                 </div>
                 <div class="product-description__price--item">
-                  <span>-</span>
-                  <span>1</span>
-                  <span>+</span>
+                  <span id="remove-item">-</span>
+                  <span id="item-number"></span>
+                  <span id="add-item">+</span>
                 </div>
                 <div class="product-description__price--item">
-                  <button>Dodaj do koszyka</button>
+                  <button id="add-basket-button">Dodaj do koszyka</button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </section>
       </main>

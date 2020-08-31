@@ -301,6 +301,7 @@ body {
 }
 .product-img__list--arrow svg {
   width: 20px;
+  cursor: pointer;
 }
 .product-img__list--arrow:first-child svg {
   transform: rotate(180deg);
@@ -448,7 +449,7 @@ body {
 .product-description__shipment--availability {
   display: flex;
 }
-.product-description__shipment--availability span {
+.product-description__shipment--availability .check-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -525,4 +526,5 @@ font-weight: 600;
   color: #ffffff;
   background-image: url(/src/img/Warstwa683.png);
   border: none;
+  cursor: pointer;
 }
