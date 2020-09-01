@@ -311,6 +311,7 @@ body {
   padding: 3px 6px;
   width: 100%;
   border: 1px solid #ececec;
+  cursor: pointer;
 }
 .product-img__list--item.active {
   border: 1px solid transparent;
@@ -389,6 +390,7 @@ body {
   padding: 3px 5px;
   width: 14%;
   border: 1px solid #dfdfdf;
+  cursor: pointer;
 }
 .product-description__color--item.active {
   border: 1px solid transparent;
@@ -419,7 +421,7 @@ body {
 }
 .product-description__parameters {
   display: flex;
-  margin: 15px 0 0 0 ;
+  margin: 15px 0 0 0;
 }
 .product-description__parameters--options {
   display: flex;
@@ -464,13 +466,14 @@ body {
   font-size: 11px;
 }
 .product-description__shipment--availability div p:last-child {
-font-weight: 600;
+  font-weight: 600;
 }
 .product-description__shipment--info {
   display: flex;
   justify-content: flex-end;
 }
 .product-description__shipment--info a {
+  margin: 4px 2px 0 0;
   text-decoration: none;
   color: #cd2d29;
   text-transform: uppercase;
@@ -527,4 +530,171 @@ font-weight: 600;
   background-image: url(/src/img/Warstwa683.png);
   border: none;
   cursor: pointer;
+}
+.product-description__advantages {
+  margin: 15px 0 0 0;
+}
+.product-description__comparison {
+  display: flex;
+  justify-content: space-between;
+}
+.product-description__comparison--container {
+  display: flex;
+}
+.product-description__comparison--txt {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 12px;
+}
+.product-description__comparison--txt span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.product-description__comparison--container a {
+  text-decoration: none;
+  color: #cd2d29;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+.product-description__comparison--container:last-child a {
+  margin: 4px 2px 0 0;
+}
+.product-description__comparison--img svg {
+  width: 35px;
+  height: 35px;
+  fill: #da2128;
+}
+.product-description__promotion {
+  display: flex;
+  position: relative;
+  margin: 18px 0 0 0;
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #dfdfdf;
+}
+.product-description__promotion .aside-img {
+  position: absolute;
+  right: 18px;
+  top: -15px;
+  background-color: #fff;
+}
+.product-description__promotion--container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 13px 5px;
+  width: 100%;
+}
+.product-description__promotion--item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 50%;
+}
+.product-description__promotion--icon {
+  margin: 9px;
+  height: 23px;
+}
+.product-description__promotion--item:nth-child(3) .product-description__promotion--icon {
+  margin: 0;
+  height: auto;
+}
+.product-description__promotion--icon img {
+  height: 100%;
+}
+.product-description__promotion--icon span {
+  display: block;
+  padding: 0 8px 0 16px;
+  font-size: 33px;
+  line-height: 33px;
+  color: #4d4d4d;
+}
+.product-description__promotion--txt p {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product-description__promotion--txt span {
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  color: #7c7c7c;
+}
+.product-description__promotion--txt a {
+  display: block;
+  text-decoration: none;
+  color: #cd2d29;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+.hotspot {
+  padding: 39px 0;
+  width: 98%;
+}
+.hotspot__title {
+  display: flex;
+  align-items: center;
+}
+.hotspot__title h2 {
+  margin: 0 0 0 13px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hotspot__product {
+  display: flex;
+}
+.hotspot__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 23px;
+}
+.hotspot__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 90px;
+  background-color: #dfdfdf;
+}
+.hotspot__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 90px;
+  background-color: #dfdfdf;
+}
+.hotspot__item:last-child {
+  padding: 20px 0 20px 46px;
+}
+.hotspot__description {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 25px;
+  padding: 0 0 12px 0;
+}
+.hotspot__item:nth-child(2) .hotspot__description,
+.hotspot__item:nth-child(3) .hotspot__description {
+  margin: 0 0 0 32px;
+}
+.hotspot__description a {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+.hotspot__description span {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
 }
