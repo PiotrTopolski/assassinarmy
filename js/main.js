@@ -15,6 +15,7 @@ const downArrowButton = document.getElementById("down-arrow");
 const imgProductList = [
   ...document.querySelectorAll(".product-img__list--item"),
 ];
+const questionsList = [...document.querySelectorAll(".desc__questions--item")];
 
 let basketQuantity = 2;
 let basketValue = 3454.0;
@@ -113,3 +114,19 @@ downArrowButton.addEventListener("click", () => {
     ? imgProductList[++imgActiveNumber].classList.add("active")
     : imgProductList[imgProductList.length - 1].classList.add("active");
 });
+
+questionsList.forEach((item) => {
+  item.addEventListener("click", () => {
+    questionsList.forEach((quest) => {
+      quest.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
+});
+
+const mobileButton = document.getElementById("mobile-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+mobileButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+})
